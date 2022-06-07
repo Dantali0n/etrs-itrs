@@ -84,7 +84,7 @@ try:
 except ImportError: # for Python<3.8
     import importlib_metadata as metadata
 
-__version__ = importlib.metadata.version('etrsitrs')
+__version__ = metadata.version('etrsitrs')
 
 try:
     from etrsitrs.main import convert, convert_fn
